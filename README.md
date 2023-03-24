@@ -16,7 +16,7 @@ To prepare the training dataframes, run the jupyter notebook `prep_data_final_v1
 
 Running training is very straight forward, just run the following command:
 
-`python train.py -C yaml/cfg_name.yaml`
+`python train.py -C yaml_accuracy/cfg_name.yaml`
 
 To train all models sequentially, run:
 
