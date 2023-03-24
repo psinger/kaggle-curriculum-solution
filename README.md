@@ -26,7 +26,7 @@ To train all models sequentially, run:
 
 For inference and validation, please refer to the [inference kernel on Kaggle](https://www.kaggle.com/code/ilu000/curriculum-4th-place-solution).
 
-Simply replace the corresponding 1st- or 2nd- stage model checkpoints. 
+Simply replace the corresponding checkpoints. 
 All configs in this training code match the ones of the inference kernel.
 You can just run the inference kernel as-is without re-training, all datasets are shared.
 
