@@ -10,7 +10,7 @@ kaggle competitions download -c learning-equality-curriculum-recommendations
 unzip learning-equality-curriculum-recommendations.zip
 ```
 
-To prepare the training dataframes, run the jupyter notebook `prep_data_final_v1.ipynb` and `prep_data_final_v2.ipynb`.
+To prepare the training dataframes, run the jupyter notebook `prep_data_final_v1.ipynb`, `prep_data_final_v2.ipynb` and `prep_data_final_v3.ipynb`.
 
 ### Training
 
