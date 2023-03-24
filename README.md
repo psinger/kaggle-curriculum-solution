@@ -20,7 +20,7 @@ Running training is very straight forward, just run the following command:
 
 To train all models sequentially, run:
 
-`for cfg in yaml/*; do python train.py -C $cfg; done`
+`for cfg in yaml_accuracy/*; do python train.py -C $cfg; done`
 
 ### Inference & Evaluation
 
