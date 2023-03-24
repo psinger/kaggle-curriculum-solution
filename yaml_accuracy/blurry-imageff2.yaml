@@ -1,0 +1,40 @@
+architecture:
+    backbone: xlm-roberta-large
+    dropout: 0.0
+    embedding_size: 512
+    intermediate_dropout: 0.0
+    pool: '[CLS] token'
+    pretrained: true
+dataset:
+    label_columns: label
+    separator: ''
+    text_column:
+    - language
+    - category
+    - title
+    - description
+    train_dataframe: data/train_folded_v7.csv
+environment:
+    mixed_precision_training: true
+    number_of_workers: 8
+    seed: -1
+experiment_name: blurry-image.ff.2
+tokenizer:
+    lowercase: false
+    max_length: 64
+    padding_quantile: 1.0
+training:
+    arcface_margin: 0.15
+    arcface_scale: 15.0
+    batch_size: 512
+    differential_learning_rate: 8.0e-05
+    differential_learning_rate_layers:
+    - backbone
+    drop_last_batch: true
+    epochs: 35
+    learning_rate: 0.0008
+    loss_function: ArcFace
+    optimizer: AdamW
+    schedule: Cosine
+    warmup_epochs: 9
+    weight_decay: 0.0
